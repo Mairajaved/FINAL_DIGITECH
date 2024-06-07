@@ -1,0 +1,61 @@
+.inpcont {
+  position: relative;
+  width: 100%;
+  max-width: 400px; /* Adjust the max-width as needed */
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  padding: 10px 40px 10px 20px;
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  color: rgb(43, 52, 150);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.abiwalacont input::placeholder {
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  color: rgb(43, 52, 150);
+}
+
+.plus-icon {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.abiwalacont {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  color: rgb(43, 52, 150);
+  border-radius: 5px;
+  width: 100%;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 767px) {
+  .inpcont {
+    max-width: 100%;
+  }
+
+  .plus-icon {
+    right: 22px; /* Adjust the position of the plus icon */
+    margin-left: 0;
+  }
+}

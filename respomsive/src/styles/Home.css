@@ -1,0 +1,566 @@
+
+
+.newinput-container{
+  position: relative;
+  margin-top: 10px;
+}
+.newinput-container input {
+  width: 25%; /* Make the input take up the full width of its container */
+  height: 49px;
+  padding: 10px;
+  padding-right: 35px; /* Add padding to make space for the arrow */
+  border-radius: 30px;
+  border: 1px solid hsla(202, 65%, 54%, 1);
+  box-sizing: border-box;
+}
+.newinput-container img {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 28%;
+  right: 44px;
+  transform: translateY(-50%);
+  background: #3D9DD6;
+  border-radius: 30px;
+  margin-right: 606px;
+}
+.newinput-container input ::placeholder {
+  color: grey;
+  margin: 2px;
+}
+.prices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  gap: 30px;
+  background-color: hsla(202, 65%, 54%, 0.1);
+}
+
+.priceleft {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  gap: 20px;
+}
+
+.priceleft h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -1.28px;
+  color: hsla(105, 20%, 4%, 1);
+  margin: 0;
+}
+
+.priceleft p {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: -0.1px;
+  color: hsla(0, 0%, 20%, 0.8);
+  margin: 0;
+}
+
+.prices img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .prices {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+  }
+
+  .priceleft {
+          text-align: left;
+          max-width: 45%;
+          margin-left: 169px;
+          margin-top: 54px;
+  }
+
+  .prices img {
+    max-width: 45%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .prices {
+    padding: 50px 100px;
+  }
+
+  .priceleft h1 {
+    font-size: 3rem;
+  }
+
+  .priceleft p {
+    font-size: 1.25rem;
+  }
+}
+
+  
+  
+  button {
+    border: none;
+    cursor: pointer;
+  }
+/*   
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  input {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  input:focus {
+    outline: 2px solid white;
+  }
+  
+  input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+   */
+
+  /* 
+  .prices img {
+    width: 865px;
+    height: 589.49px;
+    border-radius: 20px;
+    object-fit: cover;
+  } */
+  
+  /* .wrapper {
+    width: Fixed (192px) px;
+    height: Hug (49px) px;
+    padding: 15px 0px 0px 0px;
+    gap: 10px;
+    border-radius: 30px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid hsla(202, 65%, 54%, 1);
+  }
+  
+  .wrapper button {
+    width: 24px;
+    height: 24px;
+    top: 8px;
+    left: 8px;
+    padding: 6px 0px 6px 0px;
+    gap: 0px;
+    opacity: 0px;
+    border: 1.5px solid hsla(0, 0%, 100%, 1);
+  } */
+  .animation {
+    width: 1920px;
+    /* height: 689px; */
+    top: 3335px;
+    gap: 0px;
+    opacity: 0px;
+    padding: 60px;
+  }
+  .line {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    top: 3156px;
+    gap: 0px;
+    opacity: 0px;
+    margin: 60px;
+  }
+  
+  .marquee-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  @keyframes marqueeRightToLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes marqueeLeftToRight {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  .marquee {
+    animation: marqueeRightToLeft 10s linear infinite; /* Adjust duration as needed */
+  }
+  
+  .marquee.reversed {
+    animation: marqueeLeftToRight 10s linear infinite; /* Adjust duration as needed */
+  }
+  .client {
+    background-color: hsla(202, 65%, 54%, 0.1);
+    width: 100%;
+    height: auto; /* Adjust height as needed */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    align-items: flex-start; /* Align items at the start */
+    padding: 50px 20px; /* Adjust padding for responsiveness */
+  }
+  
+  .clientleft {
+    width: calc(50% - 20px); /* Adjust width for responsiveness and spacing */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Column layout for content */
+    align-items: center; /* Center items horizontally */
+    padding: 0 10px; /* Add padding */
+    margin-left: 50px;
+  }
+  .clientleft img {
+    margin-left: 35px;
+    width: 100%;
+    height: 100%
+    max-width: 400px; /* Limit the maximum width of the image */
+  }
+  
+  .clientright {
+    width: calc(50% - 20px); /* Adjust width for responsiveness and spacing */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Column layout for content */
+    align-items: center; /* Center items horizontally */
+    padding: 0 10px; /* Add padding */
+    margin-right: 80px;
+  }
+  .rightup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+  .rightlow {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .card1 {
+    width: 489px;
+    height: 280px;
+    top: 50px;
+    left: 984px;
+    padding: 99px 181px 15px 15px;
+    gap: 0px;
+    border-radius: 20px 0px 0px 0px;
+    opacity: 0px;
+    background: #325fa9;
+    color: #ffffff;
+  }
+  .card2 {
+    width: 323px;
+    height: 274px;
+    top: 50px;
+    left: 1497px;
+    padding: 99px 15px 15px 15px;
+    gap: 0px;
+    border-radius: 20px 0px 0px 0px;
+    opacity: 0px;
+    background: #3d9dd633;
+    color: #2c3590;
+  }
+  .card3 {
+    width: 489px;
+    height: 274px;
+    top: 354px;
+    left: 984px;
+    padding: 99px 181px 15px 15px;
+    gap: 0px;
+    border-radius: 20px 0px 0px 0px;
+    opacity: 0px;
+    background: #ffffff;
+    color: #333333;
+    margin-left: -10px;
+  }
+  .like {
+    width: 100%;
+    padding: 50px 20px; /* Adjust padding for better responsiveness */
+    background-color: hsla(0, 0%, 99%, 1);
+    display: flex;
+    flex-direction: column; /* Change to column layout for smaller screens */
+    align-items: center; /* Center align items in column layout */
+  }
+  
+  .likes-left {
+    width: 100%;
+    max-width: 675px;
+    padding: 0 20px;
+    margin-bottom: 30px; /* Add margin between sections in column layout */
+  }
+  
+  .likes-left input {
+    width: 100%; /* Make input width responsive */
+    height: 72px;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: hsla(202, 65%, 54%, 0.2);
+    border-radius: 30px;
+    border: 1px solid hsla(0, 0%, 80%, 1);
+    outline: none;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  .likeright {
+    width: 100%;
+    max-width: 995px;
+    padding: 0 20px;
+   margin-top: 100px;
+  }
+  
+  .likeright h2 {
+    font-size: 32px; /* Adjust font size for better responsiveness */
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: -1.28px;
+    text-align: left;
+    margin-bottom: 20px;
+    color: hsla(105, 20%, 4%, 1);
+  }
+  
+  .likeright p {
+    font-family: Inter, sans-serif;
+    font-size: 18px; /* Adjust font size for better responsiveness */
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.1px;
+    text-align: left;
+    color: hsla(0, 0%, 20%, 0.8);
+    margin-bottom: 30px;
+  }
+  
+  .likebutton {
+    padding: 10px 20px; /* Adjust padding for better responsiveness */
+    border-radius: 30px;
+    background: linear-gradient(90deg, #0099f7 0%, #12f1e4 100%);
+    color: #fff;
+    font-size: 16px; /* Adjust font size for better responsiveness */
+  }
+  
+  .likebutton:hover {
+    background: linear-gradient(90deg, #007bb5 0%, #0fd4c1 100%);
+  }
+  
+  @media (min-width: 768px) {
+    .like {
+      flex-direction: row; /* Switch to row layout for larger screens */
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  
+    .likes-left {
+      margin-bottom: 0; /* Remove bottom margin in row layout */
+      width: 675px; /* Set a fixed width for inputs */
+    }
+  
+    .likes-left input {
+      width: 675px; /* Ensure inputs have a fixed width */
+      font-size: 18px; /* Adjust font size for better readability */
+    }
+  
+    .likeright h2 {
+      font-size: 44px; /* Adjust font size for larger screens */
+      line-height: 66px;
+    }
+  
+    .likeright p {
+      font-size: 20px; /* Adjust font size for larger screens */
+      line-height: 32px;
+    }
+  
+    .likebutton {
+      font-size: 18px; /* Adjust font size for larger screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .like {
+      padding: 125px 100px; /* Increase padding for larger screens */
+    }
+  
+    .likes-left {
+      width: 675px; /* Ensure fixed width */
+    }
+  
+    .likes-left input {
+      width: 675px; /* Ensure fixed width */
+    }
+  }
+  .connectcontent {
+    width: 227px;
+    height: 28px;
+    left: 574px;
+    padding: 6px 11px 6px 12px;
+    gap: 0px;
+    border-radius: 1000px 0px 0px 0px;
+    opacity: 0px;
+  }
+  .connect {
+    width: 100%;
+    padding: 100px 20px; /* Adjust padding for responsiveness */
+    background-color: hsla(215, 28%, 17%, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .connectcontent {
+    text-align: center;
+    max-width: 1000px; /* Adjust max-width as needed */
+  }
+  
+  .connectcontent h3 {
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: hsla(53, 53%, 97%, 1);
+    margin-bottom: 20px; /* Add margin for spacing */
+  }
+  
+  .connectcontent p {
+    font-size: 18px;
+    color: hsla(53, 53%, 97%, 1);
+    margin-bottom: 30px; /* Add margin for spacing */
+  }
+  
+  .connectcontent button {
+    background-color: hsla(176, 31%, 21%, 1);
+    color: hsla(53, 53%, 97%, 1);
+    border-radius: 16px; /* Adjust border-radius for button */
+    padding: 15px 30px; /* Adjust padding for button */
+    border: 1px solid hsla(53, 53%, 97%, 0.4); /* Add border for button */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add transition for smoother hover effect */
+  }
+  
+  .connectcontent button:hover {
+    background-color: hsla(
+      176,
+      31%,
+      15%,
+      1
+    ); /* Change background color on hover */
+  }
+  .combine {
+    width: 100%; /* Make it responsive */
+    height: 908px;
+    padding: 147px 0; /* Adjust padding to control vertical spacing */
+    background: #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .combcont {
+    width: 100%;
+    max-width: 1200px; /* Maximum width for the container */
+    padding: 0 20px; /* Horizontal padding for responsiveness */
+  }
+  
+  .tools {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: uppercase;
+    border: 1px solid #FBFAF2;
+    color: #FBFAF2;
+    background: transparent;
+    border-radius: 20px;
+  }
+  
+  .combcont h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 20px 0;
+    color: #FBFAF2;
+  }
+  
+  .combcont p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 740px;
+    margin: 20px auto; /* Center and add vertical margin */
+    color: #FBFAF2;
+  }
+  
+  .all {
+    display: inline-block; /* Make it inline-block to adjust padding and margins */
+    margin: 20px auto;
+    padding: 13px 20px;
+    border-radius: 16px 0px 0px 0px;
+    border: 1px solid #FBFAF2;
+    cursor: pointer;
+    color: #FBFAF2;
+    background: transparent;
+    border-radius: 20px;
+  }
+  
+  .combcont img {
+    width: auto;
+    height: auto;
+    max-width: 100%; /* Make it responsive */
+    margin-top: 20px; /* Add margin for spacing */
+  }
+  
+  .ballimages {
+  display: flex;
+    justify-content: space-around;
+    height: 10vh;
+    /* width: 2%; */
+  }
+  .ballimages2 {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .ballimages4 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .ballimages5 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  @media (max-width: 768px) {
+    .combine {
+      padding: 147px 100px;
+     border: 10x solid transparent;
+    }
+  }
+  @media (max-width: 300) {
+    .ballimages {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      margin: 0 100px;
+    }
+  } */

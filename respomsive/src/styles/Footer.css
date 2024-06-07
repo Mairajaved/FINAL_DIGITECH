@@ -1,0 +1,90 @@
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f9fa; /* Optional: Add a background color */
+    padding: 20px; /* Space around the footer */
+    position: relative; /* Add position relative for absolute positioning */
+  }
+  
+  .center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Ensure all text is centered */
+    padding: 20px; /* Add padding for better spacing */
+  }
+  
+  .logo {
+    width: 100%;
+    max-width: 164px; /* Ensure the logo scales down on smaller screens */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px 0; /* Spacing between elements */
+  }
+  
+  .links {
+    margin: 10px 0; /* Vertical spacing */
+    color: #090c08;
+  }
+  
+  .links a {
+    text-decoration: none; /* Remove underline from links */
+    color: #090c08;
+    margin: 0 10px; /* Horizontal spacing */
+  }
+  
+  .links a:hover {
+    color: #007bff; /* Optional: Change color on hover */
+  }
+  
+span {
+    max-width: 100%;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #333333cc;
+    margin-top: 20px; /* Vertical spacing */
+    padding: 0 20px; /* Add padding for better spacing */
+    text-align: center;
+    margin-bottom: 30px;
+    text-align: center;
+    /* margin-left: 300px;
+    margin-right: 300px; */
+  }
+  
+  /* Style for the gradient elements at the bottom */
+  .blue-left, .blue-right {
+    position: absolute;
+    width: 40%;
+    height: 40px; /* Ensure the heights are consistent */
+    bottom: 0;
+    background: linear-gradient(90deg, #0099f7 0%, #12f1e4 100%);
+    border-radius: 0px 100px 0px 0px;
+    margin-top: 20px;
+  }
+  
+  .blue-left {
+    left: 0;
+  }
+  
+  .blue-right {
+    right: 0;
+    transform: scaleX(-1); /* Flip horizontally to ensure symmetry */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .links a {
+      display: block;
+      margin: 5px 0; /* Stack links vertically on smaller screens */
+    }
+  
+    .blue-left, .blue-right {
+      width: 100%; /* Make gradient elements full width */
+      border-radius: 0px;
+    }
+  }
+  

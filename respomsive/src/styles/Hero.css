@@ -1,0 +1,104 @@
+/* Basic Styles */
+* {
+  box-sizing: border-box;
+}
+
+.hero-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  width: 90%;
+  max-width: 800px; /* Added max-width for larger screens */
+  position: absolute;
+  top: 50%;
+  left: 50px; /* Adjust left position */
+  transform: translateY(-50%); /* Remove horizontal centering */
+  padding: 20px;
+}
+
+.content h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem; /* Adjusted font size for larger screens */
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -1.28px;
+  color: #090c08;
+  margin-bottom: 20px;
+  text-align: left; /* Align text to the left */
+}
+
+.content p {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem; /* Adjusted font size for larger screens */
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: -0.1px;
+  color: #090c08;
+  margin-bottom: 20px;
+  text-align: left; /* Align text to the left */
+}
+
+.animacont {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    width: 90%;
+    padding: 10px;
+    top: 60%; /* Adjusted position for better alignment */
+    left: 20px; /* Adjust left position for tablets */
+    transform: translateY(-60%); /* Remove horizontal centering */
+  }
+
+  .content h1 {
+    font-size: 2rem; /* Adjusted font size for tablets */
+    line-height: 2.5rem;
+  }
+
+  .content p {
+    font-size: 1rem; /* Adjusted font size for tablets */
+    line-height: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    width: 100%;
+    padding: 10px;
+    top: 70%; /* Adjusted position for better alignment */
+    left: 10px; /* Adjust left position for mobile */
+    transform: translateY(-70%); /* Remove horizontal centering */
+  }
+
+  .content h1 {
+    font-size: 1.5rem; /* Adjusted font size for mobile */
+    line-height: 2rem;
+  }
+
+  .content p {
+    font-size: 1rem; /* Adjusted font size for mobile */
+    line-height: 1.5rem;
+  }
+
+  .animacont {
+    display: none; /* Hide animation container on smaller screens */
+  }
+}

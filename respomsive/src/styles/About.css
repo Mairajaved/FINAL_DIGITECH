@@ -1,0 +1,39 @@
+/* Aboutfull page  Styles */
+.aboutfront {
+  width: 100%;
+}
+
+.mainpic {
+  height: 100%;
+}
+
+.aboufirstt img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.abtcards {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.abtcards img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  .abtcards {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .abtcards {
+    padding: 5px;
+  }
+}

@@ -1,0 +1,36 @@
+.kotaweb {
+  width: 365px;
+  height: 49px;
+  gap: 0px;
+  opacity: 0px;
+  position: relative;
+  border-radius: 40px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.kotaweb input {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  width: 100%;
+  border: 1px solid #3D9DD6;
+  margin-right: 100px;
+}
+
+.kotaweb button {
+  transform: translateY(-50%);
+  background: linear-gradient(90deg, #0099F7 0%, #12F1E4 100%);
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 118px;
+  height: 43px;
+  margin-left: auto; /* Adjusted to align button to the right */
+  margin-top: -42px;
+}

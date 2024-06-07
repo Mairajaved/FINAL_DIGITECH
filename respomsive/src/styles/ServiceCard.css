@@ -1,0 +1,86 @@
+.card {
+  width: 323px;
+  /* height: 578px; */
+  padding: 30px;
+  border-radius: 30px;
+  background-color: hsla(202, 65%, 54%, 0.1);
+  /* display: flex;
+  flex-direction: column;
+  margin-left: 10px; */
+  /* flex-wrap: wrap; */
+ 
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.top h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30.24px;
+  color: hsla(105, 33%, 5%, 1);
+  margin: 0;
+}
+
+.top img {
+  width: 24px;
+  height: 24px;
+}
+
+.servcontent {
+  margin-top: 20px;
+  flex-grow: 1; /* Allows the content to take up available space */
+}
+
+.servcontent p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: -0.1px;
+  color: hsla(0, 0%, 20%, 0.8);
+  margin: 0;
+}
+
+.meracont {
+  position: relative;
+  margin-top: 10px;
+}
+
+.meracont input {
+  width: 100%; /* Make the input take up the full width of its container */
+  height: 49px;
+  padding: 10px;
+  padding-right: 35px; /* Add padding to make space for the arrow */
+  border-radius: 30px;
+  border: 1px solid hsla(202, 65%, 54%, 1);
+  box-sizing: border-box;
+}
+
+.meracont img {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 29%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: #3D9DD6;
+  border-radius: 30px;
+}
+.meracont input ::placeholder {
+  color: grey;
+  margin: 2px;
+}
+@media (min-width: 1598) {
+  .card {
+    width: 100px;
+    /* height: 140px; */
+}
+.top {
+  width: 10%;
+}}
